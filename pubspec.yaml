@@ -7,16 +7,23 @@ environment:
   sdk: ">=3.4.4 <4.0.0"
 
 dependencies:
+  device_info_plus: ^10.1.2
+  file_picker: ^8.1.2
   firebase_core: ^2.24.2
   firebase_messaging: ^14.7.10
+  flutter_rating_bar: ^4.0.1
+  flutter_dotenv: ^5.1.0
+  fl_chart: ^0.69.0
   flutter:
     sdk: flutter
-  flutter_dotenv: ^5.1.0
-  flutter_slimy_card: ^1.0.2
   get: ^4.6.6
   http: ^1.2.2
+  http_parser: ^4.0.2
   iconly: ^1.0.1
+  intl: ^0.19.0
+  mime: ^1.0.6
   shared_preferences: ^2.3.1
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
@@ -25,5 +32,25 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: Poppins-ExtraBoldItalic
+      fonts:
+        - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+    - family: Poppins-LightItalic
+      fonts:
+        - asset: assets/fonts/Poppins-LightItalic.ttf
+    - family: Poppins-SemiBold
+      fonts:
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+    - family: Poppins-Light
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+  # To add assets to your application, add an assets section, like this:
+
   assets:
+    - assets/icons/line/
+    - assets/icons/solid/
+    - assets/images/
+    - assets/images/profile-pictures/
+    - assets/images/thumbnails/
     - .env
